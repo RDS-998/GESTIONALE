@@ -460,8 +460,9 @@ td video {
 .login-control {
     position: absolute;
     top: 10px;
-    right: 50px;
-    /* Adjusted to not overlap with layers switcher if expanded */
+    left: 50%;
+    transform: translateX(-50%);
+    /* Centered at the top */
     z-index: 1000;
 }
 
