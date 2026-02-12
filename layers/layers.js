@@ -2,7 +2,7 @@ var wms_layers = [];
 
 var lyr_DTM_0 = new ol.layer.Tile({
   source: new ol.source.TileWMS(({
-    url: "https://wms.pcn.minambiente.it/ogc?map%3D/ms_ogc/WMS_v1.3/raster/DTM_20M.map",
+    url: "http://wms.pcn.minambiente.it/ogc?map%3D/ms_ogc/WMS_v1.3/raster/DTM_20M.map",
     attributions: ' ',
     params: {
       "LAYERS": "EL.DTM.20M",
@@ -76,7 +76,7 @@ var lyr_GoogleHybrid_5 = new ol.layer.Tile({
 
 var lyr_Fiumiprincipaliesecondari_7 = new ol.layer.Tile({
   source: new ol.source.TileWMS(({
-    url: "https://wms.pcn.minambiente.it/ogc?map%3D/ms_ogc/WMS_v1.3/Vettoriali/Aste_fluviali.map",
+    url: "http://wms.pcn.minambiente.it/ogc?map%3D/ms_ogc/WMS_v1.3/Vettoriali/Aste_fluviali.map",
     attributions: ' ',
     params: {
       "LAYERS": "ID.RETICOLO.FIUMI_PRINCIPALI_SECONDARI",
@@ -94,7 +94,7 @@ var lyr_Fiumiprincipaliesecondari_7 = new ol.layer.Tile({
 wms_layers.push([lyr_Fiumiprincipaliesecondari_7, 0]);
 var lyr_Fiumietorrenti_8 = new ol.layer.Tile({
   source: new ol.source.TileWMS(({
-    url: "https://wms.pcn.minambiente.it/ogc?map%3D/ms_ogc/WMS_v1.3/Vettoriali/Aste_fluviali.map",
+    url: "http://wms.pcn.minambiente.it/ogc?map%3D/ms_ogc/WMS_v1.3/Vettoriali/Aste_fluviali.map",
     attributions: ' ',
     params: {
       "LAYERS": "ID.RETICOLO.FIUMI_TORRENTI",
@@ -112,7 +112,7 @@ var lyr_Fiumietorrenti_8 = new ol.layer.Tile({
 wms_layers.push([lyr_Fiumietorrenti_8, 0]);
 var lyr_Corsidacqua_9 = new ol.layer.Tile({
   source: new ol.source.TileWMS(({
-    url: "https://wms.pcn.minambiente.it/ogc?map%3D/ms_ogc/WMS_v1.3/Vettoriali/Aste_fluviali.map",
+    url: "http://wms.pcn.minambiente.it/ogc?map%3D/ms_ogc/WMS_v1.3/Vettoriali/Aste_fluviali.map",
     attributions: ' ',
     params: {
       "LAYERS": "ID.RETICOLO.CORSI_ACQUA",
@@ -138,11 +138,7 @@ var group_FERROVIA = new ol.layer.Group({
   fold: 'open',
   title: 'FERROVIA'
 });
-var group_SPECCHIDACQUA = new ol.layer.Group({
-  layers: [lyr_Fiumiprincipaliesecondari_7, lyr_Fiumietorrenti_8, lyr_Corsidacqua_9,],
-  fold: 'close',
-  title: 'SPECCHI D\'ACQUA'
-});
+
 var group_MAPPE = new ol.layer.Group({
   layers: [lyr_DTM_0, lyr_DarkMatter_1, lyr_ESRITopo_2, lyr_GoogleRoad_3, lyr_GoogleSatellite_4, lyr_GoogleHybrid_5,],
   fold: 'open',
@@ -150,4 +146,4 @@ var group_MAPPE = new ol.layer.Group({
 });
 
 lyr_DTM_0.setVisible(true); lyr_DarkMatter_1.setVisible(true); lyr_ESRITopo_2.setVisible(true); lyr_GoogleRoad_3.setVisible(true); lyr_GoogleSatellite_4.setVisible(true); lyr_GoogleHybrid_5.setVisible(true); lyr_Fiumiprincipaliesecondari_7.setVisible(true); lyr_Fiumietorrenti_8.setVisible(true); lyr_Corsidacqua_9.setVisible(true);
-var layersList = [group_MAPPE, group_SPECCHIDACQUA];
+var layersList = [group_MAPPE];
