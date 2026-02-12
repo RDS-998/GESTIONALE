@@ -2,7 +2,7 @@ var wms_layers = [];
 
 var lyr_DTM_0 = new ol.layer.Tile({
   source: new ol.source.TileWMS(({
-    url: "http://wms.pcn.minambiente.it/ogc?map%3D/ms_ogc/WMS_v1.3/raster/DTM_20M.map",
+    url: "https://wms.pcn.minambiente.it/ogc?map%3D/ms_ogc/WMS_v1.3/raster/DTM_20M.map",
     attributions: ' ',
     params: {
       "LAYERS": "EL.DTM.20M",
@@ -76,7 +76,7 @@ var lyr_GoogleHybrid_5 = new ol.layer.Tile({
 
 var lyr_Fiumiprincipaliesecondari_7 = new ol.layer.Tile({
   source: new ol.source.TileWMS(({
-    url: "http://wms.pcn.minambiente.it/ogc?map%3D/ms_ogc/WMS_v1.3/Vettoriali/Aste_fluviali.map",
+    url: "https://wms.pcn.minambiente.it/ogc?map%3D/ms_ogc/WMS_v1.3/Vettoriali/Aste_fluviali.map",
     attributions: ' ',
     params: {
       "LAYERS": "ID.RETICOLO.FIUMI_PRINCIPALI_SECONDARI",
@@ -94,7 +94,7 @@ var lyr_Fiumiprincipaliesecondari_7 = new ol.layer.Tile({
 wms_layers.push([lyr_Fiumiprincipaliesecondari_7, 0]);
 var lyr_Fiumietorrenti_8 = new ol.layer.Tile({
   source: new ol.source.TileWMS(({
-    url: "http://wms.pcn.minambiente.it/ogc?map%3D/ms_ogc/WMS_v1.3/Vettoriali/Aste_fluviali.map",
+    url: "https://wms.pcn.minambiente.it/ogc?map%3D/ms_ogc/WMS_v1.3/Vettoriali/Aste_fluviali.map",
     attributions: ' ',
     params: {
       "LAYERS": "ID.RETICOLO.FIUMI_TORRENTI",
@@ -112,7 +112,7 @@ var lyr_Fiumietorrenti_8 = new ol.layer.Tile({
 wms_layers.push([lyr_Fiumietorrenti_8, 0]);
 var lyr_Corsidacqua_9 = new ol.layer.Tile({
   source: new ol.source.TileWMS(({
-    url: "http://wms.pcn.minambiente.it/ogc?map%3D/ms_ogc/WMS_v1.3/Vettoriali/Aste_fluviali.map",
+    url: "https://wms.pcn.minambiente.it/ogc?map%3D/ms_ogc/WMS_v1.3/Vettoriali/Aste_fluviali.map",
     attributions: ' ',
     params: {
       "LAYERS": "ID.RETICOLO.CORSI_ACQUA",
