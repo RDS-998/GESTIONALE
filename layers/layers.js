@@ -140,40 +140,6 @@ var lyr_Corsidacqua_9 = new ol.layer.Tile({
                             
                           });
               wms_layers.push([lyr_Corsidacqua_9, 0]);
-var lyr_IGM100_10 = new ol.layer.Tile({
-                            source: new ol.source.TileWMS(({
-                              url: "http://wms.pcn.minambiente.it/ogc?map%3D/ms_ogc/WMS_v1.3/raster/IGM_100000.map",
-                              attributions: ' ',
-                              params: {
-                                "LAYERS": "MB.IGM100000.32",
-                                "TILED": "true",
-                                "VERSION": "1.3.0"},
-                            })),
-                            title: 'IGM 100',
-                            popuplayertitle: 'IGM 100',
-                            type: '',
-                            opacity: 1.000000,
-                            
-                            
-                          });
-              wms_layers.push([lyr_IGM100_10, 0]);
-var lyr_IGM25_11 = new ol.layer.Tile({
-                            source: new ol.source.TileWMS(({
-                              url: "http://wms.pcn.minambiente.it/ogc?map%3D/ms_ogc/WMS_v1.3/raster/IGM_25000.map",
-                              attributions: ' ',
-                              params: {
-                                "LAYERS": "CB.IGM25000.32",
-                                "TILED": "true",
-                                "VERSION": "1.3.0"},
-                            })),
-                            title: 'IGM 25',
-                            popuplayertitle: 'IGM 25',
-                            type: '',
-                            opacity: 1.000000,
-                            
-                            
-                          });
-              wms_layers.push([lyr_IGM25_11, 0]);
 var group_LIMITIAMMINISTRATIVI = new ol.layer.Group({
                                 layers: [],
                                 fold: 'close',
@@ -182,10 +148,6 @@ var group_FERROVIA = new ol.layer.Group({
                                 layers: [],
                                 fold: 'open',
                                 title: 'FERROVIA'});
-var group_IGM = new ol.layer.Group({
-                                layers: [lyr_IGM100_10,lyr_IGM25_11,],
-                                fold: 'close',
-                                title: 'IGM'});
 var group_SPECCHIDACQUA = new ol.layer.Group({
                                 layers: [lyr_Specchidacquainterni_6,lyr_Fiumiprincipaliesecondari_7,lyr_Fiumietorrenti_8,lyr_Corsidacqua_9,],
                                 fold: 'close',
@@ -195,5 +157,5 @@ var group_MAPPE = new ol.layer.Group({
                                 fold: 'open',
                                 title: 'MAPPE'});
 
-lyr_DTM_0.setVisible(true);lyr_DarkMatter_1.setVisible(true);lyr_ESRITopo_2.setVisible(true);lyr_GoogleRoad_3.setVisible(true);lyr_GoogleSatellite_4.setVisible(true);lyr_GoogleHybrid_5.setVisible(true);lyr_Specchidacquainterni_6.setVisible(true);lyr_Fiumiprincipaliesecondari_7.setVisible(true);lyr_Fiumietorrenti_8.setVisible(true);lyr_Corsidacqua_9.setVisible(true);lyr_IGM100_10.setVisible(true);lyr_IGM25_11.setVisible(true);
-var layersList = [group_MAPPE,group_SPECCHIDACQUA,group_IGM];
+lyr_DTM_0.setVisible(true);lyr_DarkMatter_1.setVisible(true);lyr_ESRITopo_2.setVisible(true);lyr_GoogleRoad_3.setVisible(true);lyr_GoogleSatellite_4.setVisible(true);lyr_GoogleHybrid_5.setVisible(true);lyr_Specchidacquainterni_6.setVisible(true);lyr_Fiumiprincipaliesecondari_7.setVisible(true);lyr_Fiumietorrenti_8.setVisible(true);lyr_Corsidacqua_9.setVisible(true);
+var layersList = [group_MAPPE,group_SPECCHIDACQUA];
